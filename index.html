@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--CLASS . : div.single-class -->
+    <div class="single-class"></div>
+
+    <!--ID # : div#id -->
+    <div id="id"></div>
+
+    <!--MULTIPLE CLASSES .. : div.multiple.classes.concatenated -->
+    <div class="multiple classes concatenated"></div>
+
+    <!-- NESTING CHILD > : div.child>ul.nesting>li -->
+    <div class="child">
+        <ul class="nesting">
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- SIBLING + : div#sibling+h2.heading+h3 -->
+    <div id="sibling"></div>
+    <h2 class="heading"></h2>
+    <h3></h3>
+
+    <!-- COMBINE CHILD & SIBLING : div+div>p>span+strong -->
+    <div></div>
+    <div>
+        <p><span></span><strong></strong></p>
+    </div>
+
+    <!--MULTIPLY ITEMS * : div>ul>li*2>a>strong -->
+    <div>
+        <ul>
+            <li><a href=""><strong></strong></a></li>
+            <li><a href=""><strong></strong></a></li>
+        </ul>
+    </div>
+
+    <!-- ADD TEXT TO ELEMENT using {} braces : h4{Text Inside}*2 -->
+    <h4>Text Inside</h4>
+    <h4>Text Inside</h4>
+
+    <!-- NUMBERING ITEMS using text$ : div>ul>li.item$*3 -->
+    <div>
+        <ul>
+            <li class="item1"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+        </ul>
+    </div>
+
+    <!-- CONTINUE NUMBERING ITEMS using $@number : div>ul>li.item$@4*2 -->
+    <div>
+        <ul>
+            <li class="item4"></li>
+            <li class="item5"></li>
+        </ul>
+    </div>
+
+    <!-- COMBINE ITEM MULTIPLICATION, TEXT & NUMBERING : div>ul>li*2>a>strong{Click Me $}  -->
+    <div>
+        <ul>
+            <li><a href=""><strong>Click Me 1</strong></a></li>
+            <li><a href=""><strong>Click Me 2</strong></a></li>
+        </ul>
+    </div>
+    
+    <!-- GROUPING ITEMS USING () brackets : (div>ul>li.item$*2>a{Text $})+(div>p>span>em)+bq+div -->
+    <div>
+        <ul>
+            <li class="item1"><a href="">Text 1</a></li>
+            <li class="item2"><a href="">Text 2</a></li>
+        </ul>
+    </div>
+    <div>
+        <p><span><em></em></span></p>
+    </div>
+    <blockquote></blockquote>
+    <div></div>
+
+    <!-- GENERATE LOREM DUMMY TEXT using lorem<number of words> : p*2>lorem10 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cum!</p>
+    <p>Magnam facere ipsam cum atque necessitatibus? Error perferendis veniam accusantium?</p>
+
+    <!-- ul.hello>li.world*2>lorem2 -->
+    <ul class="hello">
+        <li class="world">Lorem, ipsum.</li>
+        <li class="world">Nisi, sit.</li>
+    </ul>
+
+</body>
+</html>
